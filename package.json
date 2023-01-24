@@ -1,0 +1,27 @@
+{
+  "name": "type-challenges",
+  "version": "1.0.0",
+  "description": "Solutions to Type Challenges: https://github.com/type-challenges/type-challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rendxn/type-challenges.git"
+  },
+  "keywords": [
+    "typescript",
+    "challenges"
+  ],
+  "author": "Santiago Rendón Giraldo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rendxn/type-challenges.git"
+  },
+  "homepage": "https://github.com/Rendxn/type-challenges.git#readme",
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "typescript": "^4.9.4"
+  }
+}
