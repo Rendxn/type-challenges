@@ -1,6 +1,5 @@
 // ============= Test Cases =============
 import type { Equal, Expect } from "@type-challenges/utils";
-import { EmptyStatement } from "typescript";
 
 type cases = [
   Expect<Equal<First<[3, 2, 1]>, 3>>,
