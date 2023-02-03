@@ -21,10 +21,6 @@ type cases = [
  * @example
  * TrimRight<TrimLeft<S>>
  */
-type Trim<S extends string> = S extends
-  | `${TrimChars}${infer M}`
-  | `${infer M}${TrimChars}`
-  ? Trim<M>
-  : S;
+type Trim<S extends string> = S extends `${TrimChars}${infer M}` | `${infer M}${TrimChars}` ? Trim<M> : S;
 
 type TrimChars = " " | "\t" | "\n";

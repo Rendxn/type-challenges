@@ -14,10 +14,7 @@ interface Dog {
 
 type Animal = Cat | Dog;
 
-type cases = [
-  Expect<Equal<LookUp<Animal, "dog">, Dog>>,
-  Expect<Equal<LookUp<Animal, "cat">, Cat>>
-];
+type cases = [Expect<Equal<LookUp<Animal, "dog">, Dog>>, Expect<Equal<LookUp<Animal, "cat">, Cat>>];
 
 // ============= Your Code Here =============
 type LookUp<U, T extends string> = U extends { type: T } ? U : never;

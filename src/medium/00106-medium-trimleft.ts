@@ -13,6 +13,4 @@ type cases = [
 
 // ============= Your Code Here =============
 type TrimChars = " " | "\t" | "\n";
-type TrimLeft<S extends string> = S extends `${TrimChars}${infer R}`
-  ? TrimLeft<R>
-  : S;
+type TrimLeft<S extends string> = S extends `${TrimChars}${infer R}` ? TrimLeft<R> : S;
